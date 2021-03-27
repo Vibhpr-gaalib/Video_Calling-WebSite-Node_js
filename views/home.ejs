@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js" defer></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="./home.js" defer></script>
+    <script>roomId = "<%=room%>" </script>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+   <div class="main">
+    <div class="left_main">
+        <div class="main_videos">
+            <div class="videoGrid">
+
+            </div>
+        </div>
+        <div class="control">
+           <div class="video_control">
+            <div class="Mute s">
+                <p>Mute Button</p>
+            </div>
+            <div class="Pause s">
+                <p>Pause Button</p>
+            </div>
+           </div>
+           <div class="pannel_two s">
+               <div class="Security">
+                <p>Security</p>
+               </div>
+               <div class="participant s">
+                   <p>Participant</p>
+               </div>
+           </div>
+           <div class="Chat s">
+            <p>Chat</p>
+           </div>
+        </div>
+    </div>
+    <div class="right_main">
+            <div class="main_header">
+                <h2>Chat</h2>
+                <hr>
+            </div>
+            <div class="chat_window">
+                <ul class="messages">
+                </ul>
+             </div>
+             <div class="message_container">
+                <input id="chat_message" type="text" placeholder="Type message here...">
+             </div>
+    </div>
+   </div>
+    
+</body>
+</html>
