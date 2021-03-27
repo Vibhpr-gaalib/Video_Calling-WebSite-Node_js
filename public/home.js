@@ -31,6 +31,8 @@ function makeCallTOUser(userId,stream){
         removeELement(video);
     });
     peers[userId] = call;
+    
+    
 }
 let myVideoStream;
 navigator.mediaDevices.getUserMedia({
